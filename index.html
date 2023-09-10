@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+</head>
+<body >
+    
+    <header class=" shadow container-fluid bg-light text-center ">
+        <img class="p-2 " src="./images/heartitoutlogo.png" alt="" srcset="">
+    </header>
+    
+
+    <!-- Section 1 -->
+    <div class="container col-9">
+        <h2 style="color: #01818C;" class="text-center mt-3 mb-5">SECTION[15 points]</h2>
+        
+        <!-- first radio -->
+        <div class="container ms-5 my-5">
+                <h5 style="color: #01818C;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h5>
+          <div class="form-check custom-radio">
+            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Radio Button
+            <label class="form-check-label" for="radio1"></label>
+          </div>
+          <div class="form-check custom-radio">
+            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Radio Button
+            <label class="form-check-label" for="radio2"></label>
+          </div>
+          <div class="form-check custom-radio">
+            <input type="radio" class="form-check-input" disabled>Radio Button
+            <label class="form-check-label"></label>
+          </div>
+          <div class="form-check custom-radio">
+            <input type="radio" class="form-check-input" disabled>Radio Button
+            <label class="form-check-label"></label>
+          </div>
+        </div>
+
+            <!-- dropdown -->
+            <div class="container-fluid my-5 ms-5">
+                <h5 style="color: #01818C;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h5>
+                <div class="dropdown ">
+                    <a class="btn btn-secondary text-info bg-light dropdown-toggle text-start w-75" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      Drop Down Option
+                    </a>
+                  
+                    <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item text-center text-info" href="#">Action</a></li>
+                      <li><a class="dropdown-item text-center text-info" href="#">Another action</a></li>
+                      <li><a class="dropdown-item text-center text-info" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+            </div>
+    
+            <!-- second radio -->
+        <div class="container my-5 ms-5">
+            <h5 style="color: #01818C;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam!</h5>
+            <form action="/action_page.php">
+            <div class="form-check custom-radio">
+                <input type="checkbox" class="form-check-input " id="check1" name="option1" value="something" checked>
+                <label class="form-check-label" for="check1">Radio Button option</label>
+            </div>
+            <div class="form-check custom-radio">
+                <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                <label class="form-check-label" for="check2">Radio Button option</label>
+            </div>
+            <div class="form-check custom-radio">
+                <input type="checkbox" class="form-check-input " >
+                <label class="form-check-label">Radio Button option</label>
+            </div>
+            <div class="form-check custom-radio">
+                <input type="checkbox" class="form-check-input" >
+                <label class="form-check-label">Radio Button option</label>
+            </div>
+        </form>
+        </div>
+        <!--  -->
+        <div class="container text-light text-center mt-2 mb-5">
+            <button type="button" class="btn text-white py-2 px-4" style="background-color: #01818C;">Submit</button>
+        </div>
+    </div>
+    
+    <!-- section 2 -->
+    <div class="container-fluid text-center">
+        <h2 style="color: #01818C; font-family: 'Roboto';" class="text-center mt-3 mb-5">SECTION II [20 points]</h2>
+        
+        <!-- dropdown1 -->
+        <div id="clickme1" class="container-fluid my-4">
+            <div onclick="click1()" class="dropdown">
+                <a style="color: #01818C; background-color: #eef9ff;" class="btn btn-secondary border-0 dropdown-toggle text-center w-75" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Lorem ipsum dolor sit amet.
+                </a>
+              </div>
+              <!-- cards -->
+        </div>
+
+        
+        <!-- dorpdown2 -->
+        <div id="clickme2" class="container-fluid my-4">
+            <div onclick="click2()" class="dropdown">
+                <a style="color: #01818C; background-color: #eef9ff;" class="btn btn-secondary border-0 dropdown-toggle text-center w-75" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Lorem ipsum dolor sit amet.
+                </a>
+              
+              </div>
+        </div>
+         <!-- dropdown3 -->
+         <div id="clickme3" class="container-fluid my-4">
+            <div onclick="click3()" class="dropdown">
+                <a style="color: #01818C; background-color: #eef9ff;" class="btn btn-secondary border-0 dropdown-toggle text-center w-75" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Lorem ipsum dolor sit amet.
+                </a>
+              
+              </div>
+        </div>
+    </div>
+
+        <!-- Section 3 -->
+        <div style="background-color: #eef9ff;" class="container-fluid mt-5">
+            <h2 style="color: #022e70; font-family: 'Roboto';" class="col text-center mt-3 mb-5">SECTION III [20 points]</h2>
+
+            <!-- slider -->
+            <div id="owl-demo"   class="owl-carousel owl-theme">
+                <div class="item rounded-4">
+                    <div class="container rounded-4 d-block mx-auto " style="width:55%">
+               
+                            <div class="bg-white rounded-4 ">
+                                <blockquote class="rounded-4 shadow bg-light p-lg-4">
+                                    <div class="d-flex flex-column p-4">
+                                        <h5 class=" text-center mt-2 mb-4">Lorem Ipsum</h5>
+                                        <div class="d-flex justify-content-start ">
+                                            <img src="./images/Frame 1239.png" style="width: 12%;"/>
+                                        </div>
+                                        <div class="d-flex justify-content-between p-lg-5 ">
+                                            <p >
+                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+                                            </p>
+                                        </div>
+                                        <div  class="d-flex justify-content-end">
+                                            <img src="./images/Frame 1238.png" style="width: 12%;"/>
+                                        </div>
+                                      </div>  
+                                </blockquote>
+                              </div>
+                        </div>
+                </div>
+                <div class="item rounded-4">
+                    <div class="container rounded-4 d-block mx-auto " style="width:55%">
+               
+                            <div class="bg-white rounded-4 ">
+                                <blockquote class="rounded-4 shadow bg-light p-lg-4">
+                                    <div class="d-flex flex-column p-4">
+                                        <h5 class=" text-center mt-2 mb-4">Lorem Ipsum</h5>
+                                        <div class="d-flex justify-content-start ">
+                                            <img src="./images/Frame 1239.png" style="width: 12%;"/>
+                                        </div>
+                                        <div class="d-flex justify-content-between p-lg-5 ">
+                                            <p >
+                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+                                            </p>
+                                        </div>
+                                        <div  class="d-flex justify-content-end">
+                                            <img src="./images/Frame 1238.png" style="width: 12%;"/>
+                                        </div>
+                                      </div>  
+                                </blockquote>
+                              </div>
+                        </div>
+                </div>
+                <div class="item rounded-4">
+                    <div class="container rounded-4 d-block mx-auto " style="width:55%">
+               
+                            <div class="bg-white rounded-4 ">
+                                <blockquote class="rounded-4 shadow bg-light p-lg-4">
+                                    <div class="d-flex flex-column p-4">
+                                        <h5 class=" text-center mt-2 mb-4">Lorem Ipsum</h5>
+                                        <div class="d-flex justify-content-start ">
+                                            <img src="./images/Frame 1239.png" style="width: 12%;"/>
+                                        </div>
+                                        <div class="d-flex justify-content-between p-lg-5 ">
+                                            <p >
+                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+                                            </p>
+                                        </div>
+                                        <div  class="d-flex justify-content-end">
+                                            <img src="./images/Frame 1238.png" style="width: 12%;"/>
+                                        </div>
+                                      </div>  
+                                </blockquote>
+                              </div>
+                        </div>
+                </div>
+                <div class="item rounded-4">
+                    <div class="container rounded-4 d-block mx-auto " style="width:55%">
+               
+                            <div class="bg-white rounded-4 ">
+                                <blockquote class="rounded-4 shadow bg-light p-lg-4">
+                                    <div class="d-flex flex-column p-4">
+                                        <h5 class=" text-center mt-2 mb-4">Lorem Ipsum</h5>
+                                        <div class="d-flex justify-content-start ">
+                                            <img src="./images/Frame 1239.png" style="width: 12%;"/>
+                                        </div>
+                                        <div class="d-flex justify-content-between p-lg-5 ">
+                                            <p >
+                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+                                            </p>
+                                        </div>
+                                        <div  class="d-flex justify-content-end">
+                                            <img src="./images/Frame 1238.png" style="width: 12%;"/>
+                                        </div>
+                                      </div>  
+                                </blockquote>
+                              </div>
+                        </div>
+                </div>
+                <div class="item rounded-4">
+                    <div class="container rounded-4 d-block mx-auto " style="width:55%">
+               
+                            <div class="bg-white rounded-4 ">
+                                <blockquote class="rounded-4 shadow bg-light p-lg-4">
+                                    <div class="d-flex flex-column p-4">
+                                        <h5 class=" text-center mt-2 mb-4">Lorem Ipsum</h5>
+                                        <div class="d-flex justify-content-start ">
+                                            <img src="./images/Frame 1239.png" style="width: 12%;"/>
+                                        </div>
+                                        <div class="d-flex justify-content-between p-lg-5 ">
+                                            <p >
+                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+                                            </p>
+                                        </div>
+                                        <div  class="d-flex justify-content-end">
+                                            <img src="./images/Frame 1238.png" style="width: 12%;"/>
+                                        </div>
+                                      </div>  
+                                </blockquote>
+                              </div>
+                        </div>
+                </div>
+
+
+
+                
+                
+              </div>
+            </div>
+
+            <footer style="background-color: #043953;" class="footer container-fluid text-center d-flex flex-wrap align-items-center justify-content-center">
+                <img class="img-fluid " src="./images/heartitoutlogo.png" alt ="">
+            </footer> 
+
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+            <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
+            <script src="./index.js"></script>
+</body>
+</html>
